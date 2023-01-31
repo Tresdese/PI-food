@@ -5,6 +5,11 @@ const { conn } = require('../db.js')
 module.exports = (sequelize) => {
   // defino el modelo
   sequelize.define('recipe', {
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true,
+    },
     name: {
       type: DataTypes.STRING,
       allowNull: false,
