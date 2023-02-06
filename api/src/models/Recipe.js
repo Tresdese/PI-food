@@ -14,5 +14,17 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       allowNull: false,
     },
+    platillo: {
+      type: DataTypes.STRING,
+
+    },
+    h_score: {
+      type: DataTypes.INTEGER,
+
+    },
+    steps: {
+      type: DataTypes.STRING,
+      
+    }
   });
 };
